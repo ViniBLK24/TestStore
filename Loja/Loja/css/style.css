@@ -1,0 +1,220 @@
+
+/* font-family: 'Acme', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* reset CSS - para isso usamos o seletor asterisco (*)
+O asterisco representa todas as tags que estarão na pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-image-1{
+    background-image: linear-gradient(to top,rgba(0, 8, 85, 0.493), rgba(23, 0, 230, 0)), 
+    url(../images/banner-1.jpg);
+}
+
+.bg-image-2{
+background-image: url(../images/banner2.jpg);
+}
+
+.bg-color-dark{
+    background-color: #000000;
+}
+
+.bg-color-blue{
+    background-color: #040113;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-title{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-text{
+    font-size: 18px;
+    width: 60%;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    border: 2px solid #dc143c;
+    padding: 10px 25px;
+    border-radius: 70px;
+    background-color: #dc143c;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn:hover .gear{
+    margin-left: 7px;
+    animation: gear 1s linear infinite;
+}
+
+/* animação para girar a engrenagem */
+@keyframes gear {
+    to {
+       transform: rotate(360deg); 
+    }
+}
+/* *****************fim do hero*****************/
+
+/* ********************cards********************** */
+
+.card{
+display: flex;
+
+/*vertical*/
+align-items: center;
+
+/*horizontal*/
+justify-content: space-evenly;
+}
+
+.card-item{
+    /* border: 1px solid #dc143c; */
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.card-icon{
+    font-size: 70px;
+    transition: .5s;
+}
+
+.card-icon:hover{
+    cursor: pointer;
+    transform: rotate(1440deg);
+}
+
+.card-title{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+
+.card-text{
+    font-size: 14px;
+    margin: 20px 0 40px;
+    line-height: 30px;
+}
+
+.fa-playstation{
+    color: #665cbe;
+}
+
+.fa-xbox{
+    color: #9bc848;
+}
+
+.fa-steam{
+    color: #135d8f ;
+}
+
+/* ********************fim cards********************** */
+
+/*************************************store**********************************/
+.store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.store-title{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.store-text{
+    width: 600px;
+    /* text-align: left; */
+    font-size: 18px;
+    margin-bottom: 70px;
+    line-height: 34px;
+}
+
+
+
+/*************************************Fim store*****************************/
+
+
+/**************************************Gallery*******************************************/
+.gallery{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.gallery-item{
+width: 20%;
+background-color:#fff;
+padding: 10px 10px 20px 10px;
+margin: 0 10px;
+transition: .5s;
+}
+
+.gallery-item:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 220px;
+}
+
+.gallery-item figcaption{
+    color: #000000;
+font-size: 13px;
+font-weight: 800;
+}
+
+/**************************************Fim Gallery*******************************************/
